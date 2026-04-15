@@ -1,2 +1,2 @@
 # pokedex
-pokedex exercices Symfony Tailwind
+pokedex exercices Symfony Tailwind sqlite3
