@@ -1,0 +1,33 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Pokedex Accueil{% endblock %}
+
+{% block body %}
+
+
+<div class="container mx-auto p-4">
+
+    <div class="flex justify-between items-center mb-4">
+        <div class="text-4xl">Nombres de pokémon : 20</div>
+        <button type="button"
+            class=" p-8 text-white text-4xl bg-[#3dc361]    hover:bg-[#ff8904] focus:ring-4 focus:ring-[#ff8904]  rounded">
+            Ajouter</button>
+    </div>
+
+    <ul class="list-decimal scroll-auto">
+        <li class="flex flex-row flex-nowrap justify-between    items-center bg-[#1E1E1E] text-4xl gap-2 my-8 "><p>1</p> Bulbizarre <img class="object-cover w-24"
+                src="https://www.pokepedia.fr/images/thumb/e/ef/Bulbizarre-RFVF.png/644px-Bulbizarre-RFVF.png?20141212043325"
+                alt="Bulbizarre"> </li>
+            
+        <li class="flex flex-row flex-nowrap justify-between   items-center bg-[#1E1E1E] text-4xl gap-2 my-8 "><p>2</p> Bulbizarre <img class="object-cover w-24"
+                src="https://www.pokepedia.fr/images/thumb/e/ef/Bulbizarre-RFVF.png/644px-Bulbizarre-RFVF.png?20141212043325"
+                alt="Bulbizarre"> </li>
+
+    </ul>
+
+</div>
+
+
+
+
+{% endblock %}
