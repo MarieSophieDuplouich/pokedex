@@ -17,9 +17,9 @@
         <tbody>
             {% for pokemon in pokemon %}
             <tr class="flex flex-row flex-nowrap justify-between    items-center bg-[#1E1E1E] text-4xl gap-2 my-8 ">
-                <td>{{ pokemon.id }}</td>
-                <td>{{ pokemon.name }}</td>
-                <td>{{ pokemon.imageUrl }}</td>
+                <td class="flex flex-row flex-nowrap justify-between    items-center bg-[#1E1E1E] text-4xl gap-2 my-8">{{ pokemon.id }}</td>
+                <td class="flex flex-row flex-nowrap justify-between    items-center bg-[#1E1E1E] text-4xl gap-2 my-8">{{ pokemon.name }}</td>
+                <td class="flex flex-row flex-nowrap justify-between    items-center bg-[#1E1E1E] text-4xl gap-2 my-8"> <img class="object-cover w-24"src="{{ pokemon.imageUrl }}" alt="{{ pokemon.name }}"> </td>
                 <td>
                     <a class="bg-[#ff8904]    hover:bg-[#3dc361] focus:ring-4 focus:ring-[#3dc361]  rounded" href="{{ path('app_pokemon_show', {'id': pokemon.id}) }}">show</a>
                     <a class="bg-[#3dc361]    hover:bg-[#ff8904] focus:ring-4 focus:ring-[#ff8904]  rounded" href="{{ path('app_pokemon_edit', {'id': pokemon.id}) }}">edit</a>
