@@ -19,6 +19,10 @@ class Pokemon
     #[ORM\Column(length: 255)]
     private ?string $imageUrl = null;
 
+    #[ORM\ManyToOne(inversedBy: 'pokemon')]
+    #[ORM\JoinColumn(nullable: false)]
+    private ?User $user = null;
+
     public function getId(): ?int
     {
         return $this->id;
@@ -44,6 +48,18 @@ class Pokemon
     public function setImageUrl(string $imageUrl): static
     {
         $this->imageUrl = $imageUrl;
+
+        return $this;
+    }
+
+    public function getUser(): ?User
+    {
+        return $this->user;
+    }
+
+    public function setUser(?User $user): static
+    {
+        $this->user = $user;
 
         return $this;
     }
