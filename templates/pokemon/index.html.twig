@@ -21,7 +21,7 @@
                 <td>{{ pokemon.name }}</td>
                 <td>{{ pokemon.imageUrl }}</td>
                 <td>
-                    <a class="bg-[#ff8904]    hover:bg-[#3dc361] focus:ring-4 focus:ring-[#3dc361]  rounded"href="{{ path('app_pokemon_show', {'id': pokemon.id}) }}">show</a>
+                    <a class="bg-[#ff8904]    hover:bg-[#3dc361] focus:ring-4 focus:ring-[#3dc361]  rounded" href="{{ path('app_pokemon_show', {'id': pokemon.id}) }}">show</a>
                     <a class="bg-[#3dc361]    hover:bg-[#ff8904] focus:ring-4 focus:ring-[#ff8904]  rounded" href="{{ path('app_pokemon_edit', {'id': pokemon.id}) }}">edit</a>
                 </td>
             </tr>
